@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/WEB3B-15703-FADHILAH-REACT/precache-manifest.7a37463486d3d5dcf9115d743f96f0f4.js"
+  "/WEB3B-15703-FADHILAH-REACT/precache-manifest.54c8fe87df7400b67c9524869b49d330.js"
 );
 
 self.addEventListener('message', (event) => {
