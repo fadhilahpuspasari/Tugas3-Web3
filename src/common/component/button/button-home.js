@@ -4,11 +4,10 @@ import './style.css';
 
 function ButtonHome({
     type, text, disabled, borderRadius = 25,
-    background = '#4D5AF2', textColor = "white", border = 'none',
+    background = '#7e6752', textColor = "white", border = 'none',
     margin = '0px', marginLeft, marginRight, marginTop, marginBottom,
     className,onClick
-})  //untuk membuat komponen kita membuat sebuah fungsi yang ada, dari fungsi itu nantinya kita definisikan apa saja yang mau
-//dibuat secara fleksibel seperti tipenya apa, text atau yg lain, untuk mengetahui itu bisa liat di dokumentasinya ant design
+})  
 {
     return (
         <Button

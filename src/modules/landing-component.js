@@ -1,22 +1,20 @@
-import React, { Component } from 'react'; //import dari react biasa
-import { Layout, Row, Col, Modal } from 'antd'; //import dari ant seperti biasa
-import '../assets/css/landing.css' //import css dari folder css yang ada di folder assets
-import Navbar from '../common/layout/navbar-landing' //import komponen navbar dari folder layout yang ada di folder common 
-import ButtonHome from '../common/component/button/button-home'; //import komponen buttonhome yang ada di dalamn folder component yang ada di folder common
+import React, { Component } from 'react'; 
+import { Layout, Row, Col, Modal } from 'antd'; 
+import '../assets/css/landing.css' 
+import Navbar from '../common/layout/navbar-landing' 
+import ButtonHome from '../common/component/button/button-home'; 
 
-const { Content } = Layout; // membuat konstanta content yang berasal dari bawaan layout ant design, bisa dicek di dokumentasi antdesign
+const { Content } = Layout; 
 
 class LandingComponent extends Component{
     render(){
-        const image1 = require(`../assets/images/picture.svg`); //membuat variabel image 1 dimana isinya merupakan importan gambar yang ada dari folder images
-        const {initialData,showModal,handleOk,handleCancel} = this.props; {/* ini merupakan fungsi" yang sudah di definsiikan di landing-page.js 
-        kemudian kita panggil di halaman landing-component.js ketika kita memamnggil komponent dari parent komponen, komponen yang dipanggil
-        akan menjadi sebuah properti, kemudian kita dapat menggunakan properti itu dihalaman ini.
-        */}
+        const image1 = require(`../assets/images/picture.svg`); 
+        const {initialData,showModal,handleOk,handleCancel} = this.props; {
+        }
         return(
             <Layout className="landing-container">
-                <Navbar/>  {/* ini merupakan component navbar yang kita import dari folder layout yang ada di common*/}
-                <Content style={{ overflow: "hidden" }}> {/* ini merupakan component content yang sudah di define sebelumnya*/}
+                {/*<Navbar/>  {}*/}
+                <Content style={{ overflow: "hidden" }}> {}
                     <Row className="section-container">
                         <Col lg={12} md={12} sm={12}>
                             <div className="image-big-container">
@@ -46,7 +44,7 @@ class LandingComponent extends Component{
                                     </div>
                                     <div className="description-container desc-medium">
                                     I'm confident in who I am, and I'm not doing anything wrong. 
-					                I'm just being myself: being comfortable with my life, 
+					                I'm just being myself, being comfortable with my life, 
 					                comfortable with my self, and I'm figuring out who I am.
                                     </div>
                                 </Col>
@@ -58,7 +56,7 @@ class LandingComponent extends Component{
                                             textColor="#fff"
                                             className='button-participate'
                                             onClick = {showModal}
-                                        />{/* ini merupakan component button yang kita sudah definisikan di atas atas nama buttonhome*/}
+                                        />{}
                                         <ButtonHome
                                             text="Another Information"
                                             background="white"
@@ -77,7 +75,7 @@ class LandingComponent extends Component{
                                     className = "modal-notif"
                                     >
                                     <p className="text-notif">Anda dapat mengirimkan atau bertanya di fadhilahpuspasari@mail.ugm.ac.id</p>
-                                </Modal>{/* ini merupakan modal yang didalamnya memuat beberapa fungsi yang sudah di definisikan di atas sebagai this.props*/}
+                                </Modal>{}
                             </Row>
                         </Col>  
                     </Row>

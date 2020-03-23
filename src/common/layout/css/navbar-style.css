@@ -70,7 +70,9 @@
 }
 
 .menuCon
-.ant-menu-item:hover, 
+.ant-menu-item:hover{
+    color: #7e6752;
+}
 .ant-menu-active,
 .ant-menu-submenu-active,
 .ant-menu-submenu-title:hover

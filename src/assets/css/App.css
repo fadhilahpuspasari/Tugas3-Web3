@@ -8,7 +8,7 @@
 
 .mt-3 { margin-top: 3px }
 .mt-5 { margin-top: 5px }
-.mt-10 { margin-top: 10px }
+. { margin-top: 10px }
 .mt-15 { margin-top: 15px }
 .mt-20 { margin-top: 20px }
 .mt-25 { margin-top: 25px }
@@ -99,7 +99,7 @@
 
 /* Color helper */
 .text-black {
-  color: #000000;
+  color: #755844;
 }
 .background-black {
   background-color: #000000;
