@@ -9,7 +9,7 @@ const whyData = [
     {
         // // image: require(`../../../assets/images/tracking.png`),
         title: 'Photography',
-        link : "hhttps://www.instagram.com/fadhilahpuspasari/",
+        link : "https://www.instagram.com/fadhilahpuspasari/",
         description: "I began to pursue photography since class 1 high school. I am very interested in photography and really like to explore things. All photos produced using a smartphone camera. I love to capture moments."
     },
     {
@@ -66,13 +66,15 @@ class PortofolioComponent extends Component{
                                                     </div>
                                                     <div className="mt-10" style={{maxWidth:'260px'}}>
                                                         {data.description}<br/><br/>
-                                                        <ButtonHome
-                                                            text="More"
-                                                            background="#7e6752"
-                                                            textColor="#fff"
-                                                            className='button-participate'
-                                                            onClick = {data.link}
-                                                        />{}
+                                                        <a href={data.link}>
+                                                            <ButtonHome
+                                                                text="More"
+                                                                background="#7e6752"
+                                                                textColor="#fff"
+                                                                className='button-participate'
+                                                                onClick = {data.link}
+                                                            />
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </Col>

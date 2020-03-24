@@ -21,7 +21,7 @@ class LandingComponent extends Component{
                                 <img
                                     src={image1}
                                     alt="Home 1"
-                                    style={{maxWidth: '80%'}}
+                                    style={{maxWidth: '80%', marginLeft:"100px"}}
                                 />
                             </div>
                         </Col>
